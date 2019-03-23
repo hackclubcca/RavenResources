@@ -11,6 +11,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/colors.min.css') }}"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
 </head>
 <body>
@@ -24,54 +25,28 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="{{ url_for('about') }}">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
       </li>
+        <li class="nav-item dropdown right">
+          <button class="btn dropdown-toggle bg-orange" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Learn
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="{{ url_for('learn', language="Python") }}">Python</a>
+            <a class="dropdown-item" href="{{ url_for('learn', language="Java") }}">Java</a>
+            <a class="dropdown-item" href="{{ url_for('learn', language="JS") }}">JS</a>
+          </div>
+        </li>
     </ul>
   </div>
 </nav>
 <div class="p-3 mb-2 bg-warning text-dark">This site is currently under construction.</div>
-<div class="container-fluid black animated fadeIn" id="header">
-    <div class="row">
-      <div class="col text-light wow animated slideInLeft" id="emoji-big">
-        👨‍💻
-      </div>
-        <div class="col text-light wow animated bounceInUp" id="emoji-text">
-            <h1>
-                <span class="align-middle">We code. So do you. But you want more. So do we. This site is aimed at delivering "more."</span>
-            </h1>
-        </div>
-    </div>
-</div>
-<div class="container-fluid bg-warning animated fadeIn" id="header">
-    <div class="row">
-        <div class="col text-dark wow animated bounceInUp" id="emoji-text">
-            <h1>
-                <span class="align-middle">...or you don't, and you just need a little direction. We can do that too.</span>
-            </h1>
-        </div>
-      <div class="col text-dark wow animated slideInRight" id="emoji-big">
-         🙅‍♂️
-      </div>
-    </div>
-</div>
-    <div class="container-fluid bg-primary fadeIn" id="header">
-    <div class="row">
-        <div class="col text-light wow animated slideInLeft" id="emoji-big">
-         😎
-      </div>
-        <div class="col text-light wow animated bounceInUp" id="emoji-text">
-            <h1>
-                <span class="align-middle">...but we're here for you. Just look around through this treasure trove of information (that we wish we had).</span>
-            </h1>
-        </div>
-    </div>
-</div>
 
 {% block content %}
 {% endblock %}

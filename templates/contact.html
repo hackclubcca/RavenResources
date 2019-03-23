@@ -1,0 +1,14 @@
+{% extends "structure.html" %}
+{% block content %}
+    <div class="container">
+    {% from "_formhelpers.html" import render_field %}
+        <form method=post>
+          <dl>
+            {{ render_field(form.sender) }}
+            {{ render_field(form.title) }}
+            {{ render_field(form.message) }}
+          </dl>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock %}
