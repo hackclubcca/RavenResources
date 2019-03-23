@@ -1,0 +1,17 @@
+nav {
+    background: gold !important;
+}
+.black {
+    background: black !important;
+}
+#header {
+    margin-top: -10px;
+    min-height: 500px;
+    width: 100%;
+}
+#emoji-big {
+    font-size: 30vw;
+}
+#emoji-text {
+    margin-top: 15vw;
+}
