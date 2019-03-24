@@ -21,9 +21,10 @@ app.config.update(dict(
 ))
 mail = Mail(app)
 
+
 @app.route('/')
 def home():
-    return render_template("index.html")
+    return render_template("index.html", name="Home")
 
 
 @app.route('/about')
@@ -48,7 +49,7 @@ def about():
         {
 
         }
-    ])
+    ], name="About")
 
 
 @app.route('/contact', methods=['GET', 'POST'])
@@ -58,13 +59,13 @@ def contact():  # Theoretically we'll add post and get requests
         msg = Message(email.message.data, sender=email.sender.data, recipients=["appdevelopmentcca@gmail.com"])
         mail.send(msg)
         return redirect(url_for('contact'))
-    return render_template("contact.html", form=email)
+    return render_template("contact.html", form=email, name="Contact")
 
 
 @app.route('/learn/<language>')
 def learn(language):
     if language.upper() == "PYTHON":
-        return render_template("resources/python.html")
+        return render_template("resources/python.html", name="Learn: Python")
     return "Not available yet."
 
 
