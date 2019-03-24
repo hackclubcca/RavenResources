@@ -1,21 +1,25 @@
 from flask import Flask, render_template, request, redirect, url_for
 from wtforms import Form, StringField, validators, TextAreaField
+#from flask_wtf import RecaptchaField
 from flask_mail import Mail, Message
 import os
+
+RECAPTCHA_PRIVATE_KEY=""
 
 class ContactForm(Form):
     sender = StringField('Your Email', [validators.Length(min=20, max=1000), validators.Email(), validators.DataRequired()])
     title = StringField('Title', [validators.Length(min=3, max=25)])
     message = TextAreaField('Message', [validators.Length(min=20, max=1000), validators.DataRequired()])
+    #captcha = RecaptchaField()
 
 
 app = Flask(__name__)
 app.config.update(dict(
     DEBUG=True,
     MAIL_SERVER='smtp.gmail.com',
-    MAIL_PORT=465,
-    MAIL_USE_TLS=False,
-    MAIL_USE_SSL=True,
+    MAIL_PORT=587,
+    MAIL_USE_TLS=True,
+    MAIL_USE_SSL=False,
     MAIL_USERNAME='appdevelopmentcca@gmail.com',
     MAIL_PASSWORD=os.environ.get("MAIL_PASSWORD")
 ))
