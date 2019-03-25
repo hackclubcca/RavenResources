@@ -46,12 +46,6 @@ def about():
             "role" : "Moral Support",
             "grade" : 13,
             "bio" : "Much doge. Much wow. Okay but really, why did I do this."
-        },
-        {
-
-        },
-        {
-
         }
     ], name="About")
 
