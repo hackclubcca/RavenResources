@@ -552,10 +552,6 @@
         "colors": ["#c2e59c", "#64b3f4"]
     },
     {
-        "name": "Poncho",
-        "colors": ["#403A3E", "#BE5869"]
-    },
-    {
         "name": "Back to the Future",
         "colors": ["#C02425", "#F0CB35"]
     },
@@ -598,10 +594,6 @@
     {
         "name": "Miami Dolphins",
         "colors": ["#4DA0B0", "#D39D38"]
-    },
-    {
-        "name": "Forest",
-        "colors": ["#5A3F37", "#2C7744"]
     },
     {
         "name": "Nighthawk",

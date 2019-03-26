@@ -1,7 +1,6 @@
 {% extends "structure.html" %}
 {% block content %}
     <div class="container">
-        <div class="card-group">
         {% for member in members %}
             <div class="card">
                 {# <img class="card-img-top" src=" member.image " alt="Card image cap"> #}
@@ -10,7 +9,10 @@
                   <p class="card-text">Grade: {{ member.grade }}</p>
                   <p class="card-text">{{ member.bio }}</p>
                 </div>
+            <div class="alert alert-warning" role="alert">
+              This section is currently inaccurate & full of filler text.
+            </div>
+            </div>
         {% endfor %}
-        </div>
     </div>
 {% endblock %}
