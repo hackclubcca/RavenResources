@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-image: linear-gradient(to right, {{ gradient[0] }}, {{ gradient[1] }});">
   <a class="navbar-brand" href="#">
     <img src="{{ url_for('static', filename='assets/raven.png') }}" width="50" height="50" alt="">
   </a>
@@ -34,7 +34,7 @@
         <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
       </li>
         <li class="nav-item dropdown right">
-          <button class="btn dropdown-toggle bg-orange" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn dropdown-toggle" style="background: {{ gradient[0] }}" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Learn
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

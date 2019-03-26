@@ -2,7 +2,16 @@ from flask import Flask, render_template, request, redirect, url_for
 from wtforms import Form, StringField, validators, TextAreaField
 #from flask_wtf import RecaptchaField
 from flask_mail import Mail, Message
+from typing import Type
 import os
+import json
+import random
+gradients = {}
+try:
+    with open("app/gradients.json") as f:
+        gradients = json.load(f)
+except Exception:
+    print()
 
 RECAPTCHA_PRIVATE_KEY=""
 
@@ -26,9 +35,13 @@ app.config.update(dict(
 mail = Mail(app)
 
 
+def gradient():
+    gradient = gradients[random.randint(0, 200)]['colors']
+    return [gradient[0], gradient[1]]
+
 @app.route('/')
 def home():
-    return render_template("index.html", name="Home")
+    return render_template("index.html", name="Home", gradient=gradient())
 
 
 @app.route('/about')
@@ -47,7 +60,7 @@ def about():
             "grade" : 13,
             "bio" : "Much doge. Much wow. Okay but really, why did I do this."
         }
-    ], name="About")
+    ], name="About", gradient=gradient())
 
 
 @app.route('/contact', methods=['GET', 'POST'])
@@ -57,13 +70,13 @@ def contact():  # Theoretically we'll add post and get requests
         msg = Message(email.message.data, sender=email.sender.data, recipients=["appdevelopmentcca@gmail.com"])
         mail.send(msg)
         return redirect(url_for('contact'))
-    return render_template("contact.html", form=email, name="Contact")
+    return render_template("contact.html", form=email, name="Contact", gradient=gradient())
 
 
 @app.route('/learn/<language>')
 def learn(language):
     if language.upper() == "PYTHON":
-        return render_template("resources/python.html", name="Learn: Python")
+        return render_template("resources/python.html", name="Learn: Python", gradient=gradient())
     return "Not available yet."
 
 
