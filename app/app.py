@@ -14,6 +14,27 @@ except Exception:
     print()
 
 RECAPTCHA_PRIVATE_KEY=""
+tutorials = {
+ "python": [
+            {
+                "title" : "Setting up Flask",
+                "description" : "Description",
+                "content" : """
+                <pre><code>from Flask import flask, render_template, redirect</code></pre>
+                """
+            }
+        ],
+  "java": [
+      {
+                "title" : "Setting up Flask",
+                "description" : "Description",
+                "content" : """
+                <pre><code>from Flask import flask, render_template, redirect</code></pre>
+                """
+      }
+  ]
+}
+
 
 class ContactForm(Form):
     sender = StringField('Your Email', [validators.Length(min=20, max=1000), validators.Email(), validators.DataRequired()])
@@ -75,9 +96,9 @@ def contact():  # Theoretically we'll add post and get requests
 
 @app.route('/learn/<language>')
 def learn(language):
-    if language.upper() == "PYTHON":
-        return render_template("resources/python.html", name="Learn: Python", gradient=gradient())
-    return "Not available yet."
+    #if language.upper() == "PYTHON":
+    #    return render_template("resources/python.html", name="Learn: Python", gradient=gradient(), sections = tutorials["python"])
+    return render_template("resources/python.html", name="Learn: " + language, gradient=gradient(), sections=tutorials[language.lower()])
 
 
 if __name__ == '__main__':

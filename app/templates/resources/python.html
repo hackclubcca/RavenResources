@@ -1,9 +1,12 @@
 {% extends "./structure.html" %}
 {% block content %}
     <div class="container">
-        <h1>Getting the Environment Setup</h1>
-        <h1>Writing a "Hello World" Program</h1>
-        <h1>Creating a Website</h1>
-        <h1>Tutorial Resources</h1>
+        {% for section in sections %}
+            <h1>{{ section.title }}</h1>
+            <p>{{ section.description }}</p>
+            <div class="content">
+                {{ section.content|safe }}
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}
