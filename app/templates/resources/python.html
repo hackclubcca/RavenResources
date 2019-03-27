@@ -3,7 +3,7 @@
     <div class="container">
         {% for section in sections %}
             <h1>{{ section.title }}</h1>
-            <p>{{ section.description }}</p>
+            <p class="code-description">{{ section.description }}</p>
             <div class="content">
                 {{ section.content|safe }}
             </div>

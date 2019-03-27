@@ -3,6 +3,12 @@ nav {
 .black {
     background: black !important;
 }
+.code-description {
+    border-radius: 5px;
+    background: black;
+    color: limegreen;
+    width: fit-content;
+}
 #header {
     margin-top: -10px;
     min-height: 500px;

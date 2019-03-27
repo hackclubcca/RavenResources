@@ -1,0 +1,16 @@
+{
+  "python": [
+    {
+      "title": "Setting up Python Dev Environment",
+      "description": "Description",
+      "content": "To begin the setup process, please download Python by following the instructions here: <a href='https://www.python.org/downloads/'>https://www.python.org/downloads/</a>. Make sure you add Python to PATH (this should appear as a checkbox during installation)."
+    }
+  ],
+  "java": [
+    {
+      "title": "Setting up Flask",
+      "description": "Description",
+      "content": "<pre><code>from Flask import flask, render_template, redirect</code></pre>"
+    }
+  ]
+}

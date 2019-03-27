@@ -15,22 +15,23 @@ except Exception:
 
 RECAPTCHA_PRIVATE_KEY=""
 tutorials = {
- "python": [
-            {
-                "title" : "Setting up Flask",
-                "description" : "Description",
-                "content" : """
-                <pre><code>from Flask import flask, render_template, redirect</code></pre>
-                """
-            }
-        ],
+  "python": [
+        {
+          "title" : "Setup",
+          "description" : "Setting up Python Dev Environment",
+          "content" : "To begin the setup process, please download Python by following the instructions here: <a href='https://www.python.org/downloads/'>https://www.python.org/downloads/</a>. Make sure you add Python to PATH (this should appear as a checkbox during installation)."
+        },
+      {
+          "title": "Testing",
+          "description" : "Making sure the Python installation worked",
+          "content" : "Type this into command prompt (or Terminal): <pre><code>python --version</code></pre>. If the command is not found, then the installation failed (or you didn't setup the path)."
+      }
+          ],
   "java": [
       {
                 "title" : "Setting up Flask",
                 "description" : "Description",
-                "content" : """
-                <pre><code>from Flask import flask, render_template, redirect</code></pre>
-                """
+                "content" : "<pre><code>from Flask import flask, render_template, redirect</code></pre>"
       }
   ]
 }
@@ -55,7 +56,9 @@ app.config.update(dict(
 ))
 mail = Mail(app)
 
-
+'''
+Generates random gradient from list (gathered from UIGradients)
+'''
 def gradient():
     gradient = gradients[random.randint(0, 200)]['colors']
     return [gradient[0], gradient[1]]

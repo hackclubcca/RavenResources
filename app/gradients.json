@@ -116,10 +116,6 @@
         "colors": ["#CC95C0", "#DBD4B4", "#7AA1D2"]
     },
     {
-        "name": "Horizon",
-        "colors": ["#003973", "#E5E5BE"]
-    },
-    {
         "name": "Rose Water",
         "colors": ["#E55D87", "#5FC3E4"]
     },
@@ -136,16 +132,8 @@
         "colors": ["#AA076B", "#61045F"]
     },
     {
-        "name": "Aqua Marine",
-        "colors": ["#1A2980", "#26D0CE"]
-    },
-    {
         "name": "Sunrise",
         "colors": ["#FF512F", "#F09819"]
-    },
-    {
-        "name": "Purple Paradise",
-        "colors": ["#1D2B64", "#F8CDDA"]
     },
     {
         "name": "Stripe",
@@ -206,10 +194,6 @@
     {
         "name": "Opa",
         "colors": ["#3D7EAA", "#FFE47A"]
-    },
-    {
-        "name": "Titanium",
-        "colors": ["#283048", "#859398"]
     },
     {
         "name": "Mantle",
@@ -428,10 +412,6 @@
         "colors": ["#948E99", "#2E1437"]
     },
     {
-        "name": "Purple Bliss",
-        "colors": ["#360033", "#0b8793"]
-    },
-    {
         "name": "Predawn",
         "colors": ["#FFA17F", "#00223E"]
     },
@@ -634,10 +614,6 @@
     {
         "name": "Shahabi",
         "colors": ["#a80077", "#66ff00"]
-    },
-    {
-        "name": "Red Ocean",
-        "colors": ["#1D4350", "#A43931"]
     },
     {
         "name": "Tranquil",
