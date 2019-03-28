@@ -61,7 +61,8 @@ tutorials = {
         "description" : "Description",
         "content" : "<pre><code class='language-python'>print('Hello World')</code></pre>"
       }
-  ]
+  ],
+    "js":[]
 }
 
 
