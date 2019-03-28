@@ -14,7 +14,55 @@ except Exception:
     print()
 
 RECAPTCHA_PRIVATE_KEY=""
-tutorials = json.load(open("app/tutorials.json"))
+tutorials = {
+  "python": [
+        {
+          "title" : "Setup",
+          "description" : "Setting up Python Dev Environment",
+          "content" : "To begin the setup process, please download Python by following the instructions here: <a href='https://www.python.org/downloads/'>https://www.python.org/downloads/</a>. Make sure you add Python to PATH (this should appear as a checkbox during installation). We recommend you get Python 3.6 or newer."
+        },
+        {
+           "title": "Testing",
+           "description" : "Making sure the Python installation worked",
+           "content" : "Type this into command prompt (or Terminal): <pre class=\"language-python\"><code>python --version</code></pre> If the command is not found, then the installation failed (or you didn't setup the path)."
+        },
+        {
+        "title" : "Writing Hello World",
+        "description" : "The most basic Python program.",
+        "content" : """
+                    <script src=\"https://gist.github.com/harrisbegca/9cb76603192b62d91dea0aad389e7431.js\"></script>
+                    Note the lack of semicolons and excessive methods - Python is simple and concise
+                    """
+        },
+        {
+        "title" : "Writing a Class",
+        "description" : "This class will define a class with parameter 'message'. The constructor defines an object of this class with the parameter.",
+        "content" : """<script src=\"https://gist.github.com/harrisbegca/c8f5e00308fea54ecdac2f9e1492186a.js\"></script>
+                        For the time being, this is the class structure that we will work with. The init method signifies a constructor, which
+                        is a type of method. Methods are covered below. If this is confusing, another example is given below:
+                        <script src="https://gist.github.com/harrisbegca/f34382868e61ace4af560e654f1ee84b.js"></script>
+        """
+      },
+      {
+        "title" : "Writing a Method",
+        "description" : "We can do a lot of things with methods - and methods don't have to be defined in a class, like Java.",
+        "content" : "<script src=\"https://gist.github.com/harrisbegca/877a6675b580f80bf2f4999afaaaf471.js\"></script>"
+      },
+      {
+        "title" : "Inheritance",
+        "description" : "But wait, what's the point of methods or classes if we only use em once? Well, that's where inheritance comes in.",
+        "content" : "This is where it gets difficult.<script src=\"https://gist.github.com/harrisbegca/573c2bb56c551b7625ca0772ec798264.js\"></script>"
+      }
+
+  ],
+  "java": [
+      {
+        "title" : "Setting up Flask",
+        "description" : "Description",
+        "content" : "<pre><code class='language-python'>print('Hello World')</code></pre>"
+      }
+  ]
+}
 
 
 class ContactForm(Form):

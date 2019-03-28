@@ -5,8 +5,9 @@ nav {
 }
 .code-description {
     border-radius: 5px;
-    background: black;
-    color: limegreen;
+    background: #ccc;
+    color: black;
+    padding: 5px;
     width: fit-content;
 }
 #header {

@@ -8,15 +8,30 @@
         {
            "title": "Testing",
            "description" : "Making sure the Python installation worked",
-           "content" : "Type this into command prompt (or Terminal): <pre><code>python --version</code></pre>. If the command is not found, then the installation failed (or you didn't setup the path)."
-        }
+           "content" : "Type this into command prompt (or Terminal): <pre class=\"language-python\"><code>python --version</code></pre> If the command is not found, then the installation failed (or you didn't setup the path)."
+        },
+        {
+        "title" : "Writing Hello World",
+        "description" : "The most basic Python program.",
+        "content" : "<pre class='language-py'><code class='language-py'>print(\"Hello World\")</code></pre>"
+      },
+        {
+        "title" : "Writing a Class",
+        "description" : "The most basic Python program.",
+        "content" : "<pre class='language-python'><code class='language-python'>class HelloWorld:\n\tdef __init():\n\t\tprint(\"Hello World\")""</code></pre>"
+      },
+      {
+        "title" : "Writing Hello World",
+        "description" : "The most basic Python program.",
+        "content" : "<pre class='language-javascript'><code class='language-javascript'>var x = 2;</code></pre>"
+      }
 
   ],
   "java": [
       {
         "title" : "Setting up Flask",
         "description" : "Description",
-        "content" : "<pre><code>from Flask import flask, render_template, redirect</code></pre>"
+        "content" : "<pre><code class='language-python'>print('Hello World')</code></pre>"
       }
   ]
 }
