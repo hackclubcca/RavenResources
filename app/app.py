@@ -37,11 +37,16 @@ tutorials = {
                     Note the lack of semicolons and excessive methods - Python is simple and concise (totally not throwing shade at C++ & Java).
                     """
         },
-          {
+        {
               "title": "For/While/Foreach Loops",
               "description": "You'll remember this stuff FOREVER",
               "content": "<script src=\"https://gist.github.com/harrisbegca/bd6155e03f19c63b9cd1a77052c9d5cf.js\"></script>"
-          },
+        },
+{
+              "title": "Operators/Conditionals",
+              "description": "You'll run into these a lot IF you're legitimately programming in python.",
+              "content": "<script src=\"https://gist.github.com/harrisbegca/f1cb8fb05784f3320f0027542ca0e151.js\"></script>"
+        },
         {
         "title" : "Writing a Class",
         "description" : "This class will define a class with parameter 'message'. The constructor defines an object of this class with the parameter.",
