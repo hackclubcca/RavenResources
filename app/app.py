@@ -30,10 +30,18 @@ tutorials = {
         "title" : "Writing Hello World",
         "description" : "The most basic Python program.",
         "content" : """
+                    Create a file with an extension of \".py\". This will allow you to run the Python script at any time. Paste the code below to create your first program and reopen
+                    Command Prompt. There, you must navigate to the directory of the \".py\" file and type \"python {filename}.py\" Note: \"{filename}\" should be replaced with your
+                    python script's name. You can also use an IDE such as PyCharm (what I use), or a simple Text Editor like Sublime Text.  
                     <script src=\"https://gist.github.com/harrisbegca/9cb76603192b62d91dea0aad389e7431.js\"></script>
-                    Note the lack of semicolons and excessive methods - Python is simple and concise
+                    Note the lack of semicolons and excessive methods - Python is simple and concise (totally not throwing shade at C++ & Java).
                     """
         },
+          {
+              "title": "For/While/Foreach Loops",
+              "description": "You'll remember this stuff FOREVER",
+              "content": "<script src=\"https://gist.github.com/harrisbegca/bd6155e03f19c63b9cd1a77052c9d5cf.js\"></script>"
+          },
         {
         "title" : "Writing a Class",
         "description" : "This class will define a class with parameter 'message'. The constructor defines an object of this class with the parameter.",
@@ -47,6 +55,16 @@ tutorials = {
         "title" : "Writing a Method",
         "description" : "We can do a lot of things with methods - and methods don't have to be defined in a class, like Java.",
         "content" : "<script src=\"https://gist.github.com/harrisbegca/877a6675b580f80bf2f4999afaaaf471.js\"></script>"
+      },
+      {
+        "title" : "Optional: Lambda",
+        "description" : "A lambda is essentially a shortened method. Lambdas are useful for quick operations or shorthand writing.",
+        "content" : "<script src=\"https://gist.github.com/harrisbegca/5e33b482a0826664d050ea42205ca5b4.js\"></script>"
+      },
+      {
+          "title": "Optional: Intro to Args & Kwargs",
+          "description": "Need more parameters but don't want to define them each time? Well, you're in luck since Python doesn't allow overloading anyways.",
+          "content": "<script src=\"https://gist.github.com/harrisbegca/bd6155e03f19c63b9cd1a77052c9d5cf.js\"></script>"
       },
       {
         "title" : "Inheritance",
