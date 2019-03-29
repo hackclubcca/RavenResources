@@ -19,7 +19,7 @@ tutorials = {
         {
           "title" : "Setup",
           "description" : "Setting up Python Dev Environment",
-          "content" : "To begin the setup process, please download Python by following the instructions here: <a href='https://www.python.org/downloads/'>https://www.python.org/downloads/</a>. Make sure you add Python to PATH (this should appear as a checkbox during installation). We recommend you get Python 3.6 or newer."
+          "content" : "To begin the setup process, please download Python by following the instructions here: <a href='https://www.python.org/downloads/'>https://www.python.org/downloads/</a>. Make sure you add Python to PATH (this should appear as a checkbox during installation). We recommend you get Python 3.6 or newer. Please be advised... this tutorial primarily consists of snippets and may, at times, require knowledge not strictly provided in the course. This is because the tutorials were developed by one person - Harris."
         },
         {
            "title": "Testing",
@@ -38,14 +38,29 @@ tutorials = {
                     """
         },
         {
+          "title": "Basic Types / Casting",
+           "description": "Multiple data types call for new ways to manage them... this section helps you do just that",
+            "content": """<script src="https://gist.github.com/harrisbegca/564f6e38f5bca50f839f862bba629af2.js"></script>"""
+        },
+        {
+              "title": "Operators/Conditionals",
+              "description": "You'll run into these a lot IF you're legitimately programming in python.",
+              "content": "<script src=\"https://gist.github.com/harrisbegca/f1cb8fb05784f3320f0027542ca0e151.js\"></script>"
+        },
+        {
+              "title": "Using Libraries",
+              "description": "This is probably one of the most important sections you'll encounter. A core advantage of Python is the amount of libraries open for anything from website to development to making games (this site was actually partially made using Python).",
+              "content": "<script src=\"https://gist.github.com/harrisbegca/2af1d9affd8fe1b53797052b0592fbd6.js\"></script>"
+        },
+        {
               "title": "For/While/Foreach Loops",
               "description": "You'll remember this stuff FOREVER",
               "content": "<script src=\"https://gist.github.com/harrisbegca/bd6155e03f19c63b9cd1a77052c9d5cf.js\"></script>"
         },
-{
-              "title": "Operators/Conditionals",
-              "description": "You'll run into these a lot IF you're legitimately programming in python.",
-              "content": "<script src=\"https://gist.github.com/harrisbegca/f1cb8fb05784f3320f0027542ca0e151.js\"></script>"
+        {
+              "title": "Using Libraries",
+              "description": "This is probably one of the most important sections you'll encounter. A core advantage of Python is the amount of libraries open for anything from website to development to making games (this site was actually partially made using Python).",
+              "content": "<script src=\"https://gist.github.com/harrisbegca/2af1d9affd8fe1b53797052b0592fbd6.js\"></script>"
         },
         {
         "title" : "Writing a Class",
@@ -62,6 +77,15 @@ tutorials = {
         "content" : "<script src=\"https://gist.github.com/harrisbegca/877a6675b580f80bf2f4999afaaaf471.js\"></script>"
       },
       {
+        "title": "Global Variables",
+        "description": "Some variables are just destined for fame.",
+        "content": """
+        <script src="https://gist.github.com/harrisbegca/84512b6901d0ef952d16289c2ddd82a5.js"></script>
+        Thing is, though, this may be confusing if you don't understand global variables. A global variable is a variable that is universally accessible within the file,
+        whereas a local variable is simply accessible at the same level at which that variable is created.
+        """
+      },
+      {
         "title" : "Optional: Lambda",
         "description" : "A lambda is essentially a shortened method. Lambdas are useful for quick operations or shorthand writing.",
         "content" : "<script src=\"https://gist.github.com/harrisbegca/5e33b482a0826664d050ea42205ca5b4.js\"></script>"
@@ -74,7 +98,11 @@ tutorials = {
       {
         "title" : "Inheritance",
         "description" : "But wait, what's the point of methods or classes if we only use em once? Well, that's where inheritance comes in.",
-        "content" : "This is where it gets difficult.<script src=\"https://gist.github.com/harrisbegca/573c2bb56c551b7625ca0772ec798264.js\"></script>"
+        "content" : """
+        This is where it gets difficult.<script src=\"https://gist.github.com/harrisbegca/573c2bb56c551b7625ca0772ec798264.js\"></script>
+        Once again, the applications are enormous. If classes can inherit each other's properties, variable values can easily be passed between different
+        "containers" and thereby allow for the manipulation, creation, and destruction of data - the fundamentals from which all computer programs are built.
+        """
       }
 
   ],

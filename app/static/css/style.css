@@ -15,6 +15,31 @@ nav {
     min-height: 500px;
     width: 100%;
 }
+.top-ooh {
+    background: linear-gradient(270deg, #ff1e1e, #ff9c00, #ffc900, #18c51e, #00a1df, #000eff, #9c00ff, #ff00da, #ff0000);
+    background-size: 1800% 1800%;
+    height: 5px !important;
+    width: 100% !important;
+    -webkit-animation: rainbow 30s ease infinite;
+    -moz-animation: rainbow 30s ease infinite;
+    animation: rainbow 30s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes rainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 #emoji-big {
     font-size: 30vw;
 }
