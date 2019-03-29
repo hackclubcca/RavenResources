@@ -1,7 +1,6 @@
 {% extends "structure.html" %}
 {% block content %}
     <div class="container">
-    {% if available %}
         {% for member in members %}
             <div class="card">
                 {# <img class="card-img-top" src=" member.image " alt="Card image cap"> #}
@@ -15,8 +14,5 @@
             </div>
             </div>
         {% endfor %}
-    {% else %}
-        <h1>Content unavailable at this time.</h1>
-    {% endif %}
     </div>
 {% endblock %}
