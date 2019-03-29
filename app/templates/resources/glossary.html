@@ -1,0 +1,24 @@
+{% extends "./structure.html" %}
+{% block content %}
+    <div id="accordion">
+{% for gl in glossary %}
+    {% for item, definition in gl.items() %}
+      <div class="card">
+        <div class="card-header">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ loop.index0 }}" aria-expanded="false" aria-controls="collapse{{ loop.index0 }}">
+              {{ item }}
+            </button>
+          </h5>
+        </div>
+          <div id="collapse{{ loop.index0 }}" class="collapse show" data-parent="#accordion">
+          <div class="card-body">
+            {{ definition }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+{% endfor %}
+    </div>
+
+{% endblock %}

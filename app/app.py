@@ -115,6 +115,17 @@ tutorials = {
   ],
     "js":[]
 }
+glossary_dict = [
+    {"Variable": "An object storing a value"},
+     {"Comparator": "An operand that compares two objects"},
+      {"Method": "A defined set of instructions for a task"},
+       {"Class": "A definition for an object"},
+        {"Cast": "Switching between two (or more) datatypes"},
+         {"Lambda": "A mini method"},
+          {"Return": "A statement indicating an exit value"},
+           {"Type": "The datatype of an object"},
+            {"Operator": "Indicates an operation on a variable"}
+]
 
 
 class ContactForm(Form):
@@ -143,9 +154,14 @@ def gradient():
     gradient = gradients[random.randint(0, 200)]['colors']
     return [gradient[0], gradient[1]]
 
+
 @app.route('/')
 def home():
     return render_template("index.html", name="Home", gradient=gradient())
+
+@app.route('/glossary')
+def glossary():
+    return render_template("resources/glossary.html", name="Home", gradient=gradient(), glossary=glossary_dict)
 
 
 @app.route('/about')
