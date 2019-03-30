@@ -15,10 +15,24 @@ nav {
     min-height: 500px;
     width: 100%;
 }
+@media screen and (max-width: 1000px) {
+    #hello {
+        width: 66% !important;
+        height: 66% !important;
+        transform: translateY(50%);
+
+    }
+} #hello {
+
+    display: block;
+    margin: auto;
+
+  }
 .top-ooh {
     background: linear-gradient(270deg, #ff1e1e, #ff9c00, #ffc900, #18c51e, #00a1df, #000eff, #9c00ff, #ff00da, #ff0000);
     background-size: 1800% 1800%;
     height: 5px !important;
+    width: 100% !important;
     width: 100% !important;
     -webkit-animation: rainbow 30s ease infinite;
     -moz-animation: rainbow 30s ease infinite;

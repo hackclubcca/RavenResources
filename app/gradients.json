@@ -8,10 +8,6 @@
         "colors": ["#F7F8F8", "#ACBB78"]
     },
     {
-        "name": "Combi",
-        "colors": ["#00416A", "#799F0C", "#FFE000"]
-    },
-    {
         "name": "Bluelagoo",
         "colors": ["#0052D4", "#4364F7", "#6FB1FC"]
     },
@@ -180,10 +176,6 @@
         "colors": ["#134E5E", "#71B280"]
     },
     {
-        "name": "Shroom Haze",
-        "colors": ["#5C258D", "#4389A2"]
-    },
-    {
         "name": "Mystic",
         "colors": ["#757F9A", "#D7DDE8"]
     },
@@ -266,10 +258,6 @@
     {
         "name": "A Lost Memory",
         "colors": ["#DE6262", "#FFB88C"]
-    },
-    {
-        "name": "Petrichor",
-        "colors": ["#666600", "#999966"]
     },
     {
         "name": "Jonquil",
@@ -480,10 +468,6 @@
         "colors": ["#ee9ca7", "#ffdde1"]
     },
     {
-        "name": "Lizard",
-        "colors": ["#304352", "#d7d2cc"]
-    },
-    {
         "name": "Sage Persuasion",
         "colors": ["#CCCCB2", "#757519"]
     },
@@ -556,20 +540,8 @@
         "colors": ["#fd746c", "#ff9068"]
     },
     {
-        "name": "Pizelex",
-        "colors": ["#114357", "#F29492"]
-    },
-    {
         "name": "Joomla",
         "colors": ["#1e3c72", "#2a5298"]
-    },
-    {
-        "name": "Christmas",
-        "colors": ["#2F7336", "#AA3A38"]
-    },
-    {
-        "name": "Minnesota Vikings",
-        "colors": ["#5614B0", "#DBD65C"]
     },
     {
         "name": "Miami Dolphins",
@@ -643,10 +615,6 @@
     {
         "name": "Solid Vault",
         "colors": ["#3a7bd5", "#3a6073"]
-    },
-    {
-        "name": "Sunset",
-        "colors": ["#0B486B", "#F56217"]
     },
     {
         "name": "Grapefruit Sunset",
