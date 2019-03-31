@@ -55,7 +55,9 @@ tutorials = {
         {
               "title": "For/While/Foreach Loops",
               "description": "You'll remember this stuff FOREVER",
-              "content": "<script src=\"https://gist.github.com/harrisbegca/bd6155e03f19c63b9cd1a77052c9d5cf.js\"></script>"
+              "content": """<script src="https://gist.github.com/harrisbegca/5483dea8b8abf1b82f4ed58cb4bd3218.js"></script>"
+                         As you'll see, this stuff comes in handy when dealing with iterable objects such as arrays or dictionaries.
+                         """
         },
         {
               "title": "Using Libraries",
