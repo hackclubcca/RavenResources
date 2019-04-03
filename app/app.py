@@ -118,9 +118,9 @@ tutorials = {
       },
       {
           "title": "Subclasses",
-          "description": "",
+          "description": "I heard you like classes, so I made a class inside of a class inside of a class",
           "content": """
-          
+          <script src="https://gist.github.com/harrisbegca/0422ff16bfc98b8019ea6404abaeaae2.js"></script>
           """
       }
   ],

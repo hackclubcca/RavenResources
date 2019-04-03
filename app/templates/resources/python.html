@@ -6,7 +6,7 @@
     <div class="container">
         {% for section in sections %}
             <h1>{{ section.title }}</h1>
-            <p class="code-description">{{ section.description }}</p>
+            <p class="code-description" style="background-image: linear-gradient(to right, {{ gradient[0] }}, {{ gradient[1] }});">{{ section.description }}</p>
             <div class="content">
                 {{ section.content|safe }}
             </div>

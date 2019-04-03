@@ -2,7 +2,24 @@
 {% block content %}
     {# Add search here #}
     <!-- Search form -->
-    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        <input id="search-kw" class="form-control" type="text" placeholder="Search" aria-label="Search">
+
+    <script>
+          var items = [
+              {% for gl in glossary %}
+              {% for item, definition in gl.items() %}
+              "{{ item }}",
+              {% endfor %}
+              {% endfor %}
+              ""
+          ];
+          var links = [
+
+          ];
+          $('#search-kw').autocomplete({
+              source: items
+          });
+      </script>
     <div id="accordion">
 {% for gl in glossary %}
     {% set x = loop.index0 %}
@@ -20,15 +37,6 @@
             {{ definition }}
           </div>
         </div>
-      <script>
-          var items = [
-              "A",
-              "B"
-          ]
-          $('{{ x }}').autocomplete({
-              source: items
-          });
-      </script>
       </div>
     {% endfor %}
 {% endfor %}
