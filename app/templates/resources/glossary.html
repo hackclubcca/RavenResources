@@ -1,21 +1,34 @@
 {% extends "./structure.html" %}
 {% block content %}
+    {# Add search here #}
+    <!-- Search form -->
+    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
     <div id="accordion">
 {% for gl in glossary %}
+    {% set x = loop.index0 %}
     {% for item, definition in gl.items() %}
       <div class="card">
-        <div class="card-header">
+        <div class="card-header" style="background-image: linear-gradient(to right, {{ gradient[0] }}, {{ gradient[1] }});">
           <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ loop.index0 }}" aria-expanded="false" aria-controls="collapse{{ loop.index0 }}">
+            <button class="btn btn-link" style=" color: white;" data-toggle="collapse" data-target="#collapse{{ x }}" aria-expanded="false" aria-controls="collapse{{ x }}" >
               {{ item }}
             </button>
           </h5>
         </div>
-          <div id="collapse{{ loop.index0 }}" class="collapse show" data-parent="#accordion">
+          <div id="collapse{{ x }}" class="collapse" data-parent="#accordion">
           <div class="card-body">
             {{ definition }}
           </div>
         </div>
+      <script>
+          var items = [
+              "A",
+              "B"
+          ]
+          $('{{ x }}').autocomplete({
+              source: items
+          });
+      </script>
       </div>
     {% endfor %}
 {% endfor %}
