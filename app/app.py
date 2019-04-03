@@ -110,9 +110,18 @@ tutorials = {
   ],
   "java": [
       {
-        "title" : "Setting up Flask",
-        "description" : "Description",
-        "content" : "<pre><code class='language-python'>print('Hello World')</code></pre>"
+        "title" : "Generics",
+        "description" : "Generics are used to produce classes and methods of 'generic' types.",
+        "content" : """
+        <script src="https://gist.github.com/harrisbegca/16d39efc3c33091eafec47fc79be4b4c.js"></script>
+        """
+      },
+      {
+          "title": "Subclasses",
+          "description": "",
+          "content": """
+          
+          """
       }
   ],
     "js":[]
