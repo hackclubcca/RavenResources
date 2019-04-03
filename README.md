@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://ravenresources.herokuapp.com">Raven Resources</a></h1>
 <p align="center">
-  <img height="250" src="https://github.com/harrisbegca/RavenResources/blob/master/ravenhelp.svg"/>
+  <img height="250" src="https://github.com/ravenhackers/RavenResources/blob/master/ravenhelp.svg"/>
 </p>
 
 
