@@ -165,6 +165,9 @@ def gradient():
     gradient = gradients[random.randint(0, 200)]['colors']
     return [gradient[0], gradient[1]]
 
+@app.errorhandler(404)
+def dunder(e):
+  return render_template("404.html"), 404
 
 @app.route('/')
 def home():
