@@ -140,9 +140,9 @@ glossary_dict = [
 
 
 class ContactForm(Form):
-    sender = StringField('Your Email', [validators.Length(min=20, max=1000), validators.Email(), validators.DataRequired()])
-    title = StringField('Title', [validators.Length(min=3, max=25)])
-    message = TextAreaField('Message', [validators.Length(min=20, max=1000), validators.DataRequired()])
+    sender = StringField('Your Email', [validators.Length(min=20, max=1000), validators.Email(), validators.DataRequired()], render_kw={'class':'form-control'})
+    title = StringField('Title', [validators.Length(min=3, max=25)], render_kw={'class':'form-control'})
+    message = TextAreaField('Message', [validators.Length(min=20, max=1000), validators.DataRequired()], render_kw={'class':'form-control'})
     #captcha = RecaptchaField()
 
 

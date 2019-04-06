@@ -2,10 +2,12 @@
 {% block content %}
     <div class="container">
     <h1>Harris Beg</h1>
-        <span>
-            <h2>Email: </h2> <a href="mailto:harrisbegca@gmail.com">harrisbegca@gmail.com</a>
-            <h2>Website: </h2><a href="https://harrisbeg.com">harrisbeg.com</a>
-        </span>
+        <button type="button" class="btn btn-primary">
+          Email <a class="badge badge-danger" href="mailto:harrisbegca@gmail.com">harrisbegca@gmail.com</a>
+        </button>
+        <button type="button" class="btn btn-primary">
+          Website <a class="badge badge-info" href="https://harrisbeg.com">harrisbeg.com</a>
+        </button>
     {% from "_formhelpers.html" import render_field %}
         <form method=post>
           <dl>
